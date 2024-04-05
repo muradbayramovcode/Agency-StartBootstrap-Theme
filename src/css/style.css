@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sectionHeaders {
+  margin: 8vh;
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+  flex-direction: column;
+}
+.sectionHeaders h2 {
+  font-size: 40px;
+}
+.sectionHeaders p {
+  font-style: italic;
+}
+
+.buttonLikeClickableLinks {
+  color: white;
+  background-color: #ffc800;
+  padding: 4vh;
+  width: 35vh;
+  text-align: center;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.buttonLikeClickableLinks:hover {
+  background-color: #d9aa00;
+}
+
+.socialLinks ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2vh;
+}
+.socialLinks ul li {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #212529;
+  border-radius: 25vh;
+  width: 6vh;
+  height: 6vh;
+  bottom: 0;
+  text-align: center;
+}
+.socialLinks ul li i {
+  color: white;
+  font-size: 18px;
+}
+.socialLinks ul li:hover {
+  background-color: #424649;
+  bottom: 15px;
+}
+
+header {
+  background-color: #212529;
+  padding-left: 18vh;
+  padding-right: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  z-index: 100;
+}
+header a img {
+  height: 15vh;
+  width: 35%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header nav ul {
+  display: flex;
+  gap: 5vh;
+  list-style-type: none;
+}
+header nav ul li a {
+  color: #e8e6e3;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+  color: #ffc800;
+}
+
+main #UpBanner {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 90vh;
+}
+main #UpBanner img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+main #UpBanner #upBannerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+main #UpBanner #upBannerText h3 {
+  font-style: italic;
+  font-size: 2.25rem;
+}
+main #UpBanner #upBannerText h1 {
+  font-size: 4.5rem;
+}
+main #Services {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+main #Services #servicesCards {
+  display: flex;
+  justify-content: space-evenly;
+}
+main #Services #servicesCards .servicesCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 50vh;
+  gap: 2vh;
+}
+main #Services #servicesCards .servicesCard i {
+  background-color: #ffc800;
+  width: 20vh;
+  height: 20vh;
+  padding: 5vh 0;
+  border-radius: 30vh;
+  color: white;
+  font-size: 10vh;
+}
+main #Services #servicesCards .servicesCard p {
+  color: #6c757d;
+  line-height: 4vh;
+  font-weight: 500;
+}
+main #Portfolio {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  margin-top: 6vh;
+  padding-bottom: 9vh;
+}
+main #Portfolio #portfolioCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4vh;
+}
+main #Portfolio #portfolioCards .portfolioCard {
+  display: flex;
+  flex-direction: column;
+}
+main #Portfolio #portfolioCards .portfolioCard img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 60vh;
+  height: 50vh;
+  margin-bottom: -3vh;
+}
+main #Portfolio #portfolioCards .portfolioCard .portfolioCardHeader {
+  background-color: white;
+  width: 60vh;
+  padding: 4.5vh 0 4.5vh 0;
+  text-align: center;
+}
+main #Portfolio #portfolioCards .portfolioCard .portfolioCardHeader h4 {
+  font-size: 24px;
+}
+main #Portfolio #portfolioCards .portfolioCard .portfolioCardHeader p {
+  font-size: 16px;
+  font-style: italic;
+  color: #6c757d;
+}
+main #About #aboutInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  margin-bottom: 10vh;
+}
+main #About #aboutInfo .aboutImageWithText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+main #About #aboutInfo .aboutImageWithText img {
+  border: 7px solid #e9ecef;
+  border-radius: 20vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 25vh;
+  margin-bottom: 15vh;
+  z-index: 1;
+}
+main #About #aboutInfo .aboutImageWithText::after {
+  content: "";
+  position: absolute;
+  top: 25vh;
+  left: 105vh;
+  border-right: 2px solid #e9ecef;
+  width: 1vh;
+  height: 65vh;
+  z-index: -1;
+}
+main #About #aboutInfo .aboutImageWithText .aboutImageBothText {
+  line-height: 32px;
+  position: absolute;
+  top: 0;
+  width: 70vh;
+  z-index: 1;
+}
+main #About #aboutInfo .aboutImageWithText .aboutImageTextLeft {
+  left: 10vh;
+  text-align: right;
+}
+main #About #aboutInfo .aboutImageWithText .aboutImageTextRight {
+  right: 10vh;
+  text-align: left;
+}
+main #About #aboutInfo .aboutImageWithText #aboutLastBox {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 30vh;
+  border: 7px solid #e9ecef;
+  background-color: #ffc800;
+  color: white;
+  padding: 8vh 4.4vh;
+  font-weight: bold;
+}
+main #Team {
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+main #Team #teamCards {
+  display: flex;
+  justify-content: space-evenly;
+}
+main #Team #teamCards .teamCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+main #Team #teamCards .teamCard img {
+  border: 7px solid #e9ecef;
+  border-radius: 20vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30vh;
+}
+main #Team p {
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+footer #Contact {
+  background-image: url("../images/footer-top/map-image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 95vh;
+}
+footer #Contact .footerTopHeader {
+  color: white;
+}
+footer #Contact #footerTopForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+footer #Contact #footerTopForm #footerFormTypes {
+  display: flex;
+  align-items: center;
+  gap: 5vh;
+}
+footer #Contact #footerTopForm #footerFormTypes #footerInputAreas {
+  display: flex;
+  flex-direction: column;
+}
+footer #Contact #footerTopForm #footerFormTypes #footerInputAreas input {
+  padding: 3vh;
+  width: 83vh;
+  height: 10vh;
+  border-radius: 1vh;
+  margin: 2vh;
+  border: none;
+}
+footer #Contact #footerTopForm #footerFormTypes textarea {
+  width: 80vh;
+  height: 39vh;
+  padding: 5vh;
+  border-radius: 1vh;
+}
+footer #FooterBottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5vh;
+}
+footer #FooterBottom #footerBottomNavLinks {
+  display: flex;
+  gap: 5vh;
+}
+footer #FooterBottom #footerBottomNavLinks a {
+  color: #212529;
+}/*# sourceMappingURL=style.css.map */

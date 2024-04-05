@@ -1,0 +1,38 @@
+header {
+    background-color: #212529;
+    padding-left: 18vh;
+    padding-right: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    z-index: 100;
+
+    a {
+        img {
+            height: 15vh;
+            width: 35%;
+            object-fit: contain;
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            gap: 5vh;
+            list-style-type: none;
+
+            li {
+                a {
+                    color: #e8e6e3;
+                    text-transform: uppercase;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        color: #ffc800;
+                    }
+                }
+            }
+        }
+    }
+}
